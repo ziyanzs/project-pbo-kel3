@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/surat/jar/jdt-compiler-3.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/servlet-api-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/jasperreports-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/jcommon-1.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/mysql-connector-java-5.1.23-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/groovy-all-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/surat/jar/commons-beanutils-1.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

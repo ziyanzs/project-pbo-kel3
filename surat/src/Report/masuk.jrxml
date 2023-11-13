@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="62dcd146-76e4-471c-86be-6b4f7fff3652">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     surat_masuk.`no_surat` AS surat_masuk_no_surat,
+     surat_masuk.`tanggal_terima` AS surat_masuk_tanggal_terima,
+     surat_masuk.`terima_dari` AS surat_masuk_terima_dari,
+     surat_masuk.`isi_prihal` AS surat_masuk_isi_prihal,
+     surat_masuk.`lampiran` AS surat_masuk_lampiran,
+     surat_masuk.`keterangan` AS surat_masuk_keterangan
+FROM
+     `surat_masuk` surat_masuk]]>
+	</queryString>
+	<field name="surat_masuk_no_surat" class="java.lang.String"/>
+	<field name="surat_masuk_tanggal_terima" class="java.lang.String"/>
+	<field name="surat_masuk_terima_dari" class="java.lang.String"/>
+	<field name="surat_masuk_isi_prihal" class="java.lang.String"/>
+	<field name="surat_masuk_lampiran" class="java.lang.String"/>
+	<field name="surat_masuk_keterangan" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#FFFFFF" uuid="aeef8a20-296e-4e1f-a911-7c088c525c2e"/>
+				<staticText>
+					<reportElement x="82" y="26" width="449" height="43" forecolor="#000000" uuid="be404741-f645-4d7d-8e49-c3389462c39d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[LAPORAN SURAT MASUK]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="9f30a0f0-ed27-47c7-aa82-979129951e05"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="6" y="0" width="55" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="ae96ff66-b01e-4655-abdd-f00b32d6cb3e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO SURAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="153" y="0" width="81" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="1f42baca-d5d9-48e2-977b-958614e58697"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERIMA DARI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="263" y="0" width="69" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="46aef524-80d4-44a5-b255-5ba32efe1652"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISI/PRIHAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="365" y="0" width="69" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="66c7d61d-3eea-4978-99d5-4262f035d881"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAMPIRAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="440" y="0" width="89" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="732e8612-333d-49cb-989a-f867f757c1a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="73" y="0" width="68" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="731f2121-d323-4f8d-9ea0-a70fee9f6e4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL TERIMA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="e1f06b5a-e020-41cd-b10a-78d81a538302"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="-4" y="0" width="72" height="20" uuid="3a340ea4-c6aa-4e4d-a625-46976ed6e0a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_no_surat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="159" y="0" width="70" height="20" uuid="193aef20-1b73-4211-8068-67995700989f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_terima_dari}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="269" y="0" width="56" height="20" uuid="25dfc505-ccd4-4221-b6d1-bc583b86f1db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_isi_prihal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="369" y="0" width="62" height="20" uuid="830fa617-ae81-4ebd-b582-60f8872904da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_lampiran}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="441" y="0" width="84" height="20" uuid="ed29255f-7c01-4959-b348-9197e41d242b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_keterangan}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="73" y="0" width="64" height="20" uuid="65fb5480-1c52-4e56-acc3-6f25716e4449"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surat_masuk_tanggal_terima}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="145" y="4" width="295" height="13" backcolor="#FFFFFF" uuid="082872db-5a3d-4af0-9003-26fdaeb9395d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="513" y="4" width="40" height="13" backcolor="#FFFFFF" uuid="4e88d529-b7cb-42d9-8f04-c62ba14078a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="f8dad836-0ce4-48b8-8aeb-136e4c3f2cd3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
